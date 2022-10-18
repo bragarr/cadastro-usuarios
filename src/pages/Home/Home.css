@@ -1,0 +1,29 @@
+.form__tittle {
+    text-align: center;
+}
+
+.form__registration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__input {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+
+}
+
+.input__data, .button__save {
+    height: 5vh;
+}
+
+.date__birth {
+    width: 20vw;
+}
+
+.button__save {
+    margin: 2vh 0;
+    width: 20vw;
+}
