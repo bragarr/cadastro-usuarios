@@ -2,35 +2,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
-.form__tittle {
-    text-align: center;
-}
-
-.form__registration {
-    font-size: 1.5rem;
-    display: inline-block;
-    background-color: var(--standard-white);
-    box-shadow: 0px 0px 2px 2px var(--standard-black);
-    border-radius: 5px;
-}
-
-.form__input {
+.form__inputs {
     display: flex;
     flex-direction: column;
-    width: 60vw;
-    border: none;
+    border-radius: 5px;
+    background-color: var(--standard-white);
+    margin: 0;
+    box-shadow: 5px 5px 20px 2px var(--standard-blue);
 }
 
 .label__inputs {
-    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: 1vh 0;
+    font-size: 1.2rem;
 }
 
-.input__data {
-    height: 5vh;
-    width: 60vw;
+.input__data, .button__save {
+    height: 4vh;
     font-size: 1.2rem;
 }
 
@@ -38,52 +30,38 @@
     width: 140px;
 }
 
-.form__button {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    border: none;
-}
-
 .button__save {
-    height: 8vh;
-    color: var(--standard-white);
-    border: none;
-    border-radius: 5px;
     background-color: var(--standard-blue);
-    text-align: center;
+    color: var(--standard-white);
+    border-radius: 5px;
+    border: none;
     cursor: pointer;
 }
 
 @media screen and (min-width:720px) {
     .form__registration {
+        width: 100%;
         display: flex;
-        align-items: center;
-        padding: 3vh 0;
-    }
-
-    .form__input, .label__inputs, .input__data {
-        font-size: 0.8rem;
-        width: 10vw;
-    }
-
-    .date__birth, .label__birth {
-        width: 100px;
-    } 
-
-    .form__button {
-        flex-direction: row;
+        justify-content: center;
     }
     
+    .form__inputs {
+        flex-direction: row;
+        align-items:flex-end;
+    }
+
+    .label__inputs, .input__data {
+        width: 150px;
+        font-size: 1rem;
+        margin: 0 14px 0 0;
+    }
+
+    .label__birth, .date__birth {
+        width: 120px;
+        margin: 0 10px 0 0;
+    }
 
     .button__save {
-        height: 8vh;
-        width: 8vw;
-        color: var(--standard-white);
-        border: none;
-        border-radius: 5px;
-        background-color: var(--standard-blue);
-        text-align: center;
-
+        height: 4.5vh;
     }
 }
