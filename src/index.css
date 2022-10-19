@@ -1,3 +1,10 @@
 :root {
+  --standard-grey: #eeeeee;
+  --standard-white: #ffffff;
+  --standard-black: #000000;
+}
+
+body {
   font-family: Arial, sans-serif;
+  background-color: var(--standard-grey);
 }
