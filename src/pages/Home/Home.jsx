@@ -21,7 +21,9 @@ export function Home() {
                         <label htmlFor="date__birth" className="label__inputs">Date of Birth</label>
                         <input type="date" name="date__birth" id="date__birth" required className="input__data date__birth"/>
                     </fieldset>
-                    <button type="submit" className="button__save">Save</button>
+                    <fieldset className="form__input form__button">
+                        <button type="submit" className="button__save">Save</button>
+                    </fieldset>
                 </form>
         </section>
     );
