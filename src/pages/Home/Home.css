@@ -31,38 +31,59 @@
 .input__data {
     height: 5vh;
     width: 60vw;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .date__birth {
-    width: 180px;
+    width: 140px;
 }
 
 .form__button {
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border: none;
 }
 
 .button__save {
-    width: 30vw;
-    height: 5vh;
+    height: 8vh;
     color: var(--standard-white);
     border: none;
     border-radius: 5px;
     background-color: var(--standard-blue);
     text-align: center;
+    cursor: pointer;
 }
 
 @media screen and (min-width:720px) {
     .form__registration {
         display: flex;
+        align-items: center;
         padding: 3vh 0;
     }
 
     .form__input, .label__inputs, .input__data {
-        width: 18vw;
+        font-size: 0.8rem;
+        width: 10vw;
     }
 
-    .date__birth {
-        width: 200px;
+    .date__birth, .label__birth {
+        width: 100px;
     } 
+
+    .form__button {
+        flex-direction: row;
+    }
+    
+
+    .button__save {
+        height: 8vh;
+        width: 8vw;
+        color: var(--standard-white);
+        border: none;
+        border-radius: 5px;
+        background-color: var(--standard-blue);
+        text-align: center;
+
+    }
 }

@@ -17,11 +17,11 @@ export function Home() {
                         <label htmlFor="phone" className="label__inputs">Phone</label>
                         <input type="tel" name="phone" id="phone" required className="input__data"/>
                     </fieldset>
-                    <fieldset className="form__input">
-                        <label htmlFor="date__birth" className="label__inputs">Date of Birth</label>
+                    <fieldset className="form__input label__birth">
+                        <label htmlFor="date__birth" className="label__inputs label__birth">Date of Birth</label>
                         <input type="date" name="date__birth" id="date__birth" required className="input__data date__birth"/>
                     </fieldset>
-                    <fieldset className="form__input form__button">
+                    <fieldset className="form__button">
                         <button type="submit" className="button__save">Save</button>
                     </fieldset>
                 </form>
