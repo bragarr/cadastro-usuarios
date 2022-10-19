@@ -11,6 +11,8 @@
     background-color: var(--standard-white);
     margin: 0;
     box-shadow: 5px 5px 20px 2px var(--standard-blue);
+    border: none;
+    outline: 2px solid var(--standard-grey);
 }
 
 .label__inputs {
@@ -24,6 +26,13 @@
 .input__data, .button__save {
     height: 4vh;
     font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    outline: 1px solid var(--standard-grey);
+}
+
+.input__data:focus {
+    outline: 1px solid var(--standard-blue);
 }
 
 .date__birth {
@@ -33,7 +42,6 @@
 .button__save {
     background-color: var(--standard-blue);
     color: var(--standard-white);
-    border-radius: 5px;
     border: none;
     cursor: pointer;
 }
