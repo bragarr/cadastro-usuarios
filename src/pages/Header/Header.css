@@ -1,0 +1,27 @@
+.survey__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--standard-blue);
+    color: var(--standard-white);
+    height: 10vh;
+}
+
+.app__icon, .app__tittle {
+    font-size: 1.4rem;
+    margin: 0 1rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width:720px) {
+    .app__tittle {
+        margin: 0 4rem;
+    }
+}

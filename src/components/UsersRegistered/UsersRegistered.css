@@ -1,0 +1,69 @@
+.table__users {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px 2px var(--standard-blue);
+}
+
+.table__head {
+    border-bottom: 2px solid var(--standard-blue);
+    background-color: var(--standard-blue);
+    color: var(--standard-grey);
+    border-radius: 5px 5px 0 0;
+    padding: 1vh;
+    margin-bottom: 1vh;
+}
+
+.info__inputs {
+    width: 16vw;
+    padding: 0 1vw;
+    text-align: left;
+    word-break:normal;
+}
+
+.input__email {
+    word-break: break-all;
+}
+
+.info__body {
+    height: 5vh;
+}
+
+.info__actions {
+    width: 8vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+.edit:hover {
+    color: var(--standard-yellow);
+    font-size: 2rem;
+}
+
+.delete:hover {
+    color: var(--standard-red);
+    font-size: 2rem;
+}
+
+.input__email, .input__tag {
+    text-transform: lowercase;
+}
+
+@media screen and (min-width:720px) {
+    .table__users {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .table__users {
+        font-size: 1rem;
+    }
+
+    .input__fone, .input__tag, .info__actions {
+        width: 90px;
+    }
+}

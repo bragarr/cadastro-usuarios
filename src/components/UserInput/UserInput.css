@@ -1,0 +1,81 @@
+.form__inputs {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: var(--standard-white);
+    margin: 0;
+    box-shadow: 5px 5px 20px 2px var(--standard-blue);
+    border: none;
+    outline: 2px solid var(--standard-grey);
+}
+
+.container__figure {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 1vh 0;
+}
+
+.label__inputs {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: 1vh 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.input__data {
+    margin: 1vh 0;
+}
+
+.input__data, .button__save {
+    height: 4vh;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    outline: 1px solid var(--standard-grey);
+}
+
+.input__data:focus {
+    outline: 1px solid var(--standard-blue);
+}
+
+.button__save {
+    background-color: var(--standard-blue);
+    color: var(--standard-white);
+    border: none;
+    cursor: pointer;
+    padding: 0 1vw;
+}
+
+.button__save:hover {
+    background-color: var(--standard-grey);
+    color: var(--standard-blue);
+    outline: 1px solid var(--standard-blue);
+    transition: 1s;
+}
+
+@media screen and (min-width:720px) {
+    .form__registration {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .form__inputs {
+        flex-direction: row;
+        align-items:flex-end;
+    }
+
+    .label__inputs, .input__data {
+        width: 130px;
+        font-size: 1rem;
+        margin: 0 14px 0 0;
+    }
+
+    .button__save {
+        height: 4.5vh;
+    }
+}
