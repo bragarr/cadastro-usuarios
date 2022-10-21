@@ -14,7 +14,7 @@ export function UsersRegistered({users, setUsers, setOnEdit}) {
 
     const handleDelete = async (id) => {
         await axios
-            .delete("http://localhost:3000/" + id)
+            .delete("https://us-cdbr-east-06.cleardb.net:4000/" + id)
             .then(({ data }) => {
                 const newArray = users.filter((user) => user.id !== id);
                 setUsers(newArray);
