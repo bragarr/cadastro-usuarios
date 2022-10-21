@@ -64,7 +64,7 @@
 
     .input__tag, .input__tag--desc {
         display: table-cell;
-        width: 50px;
+        width: 80px;
     }
 
     .table__users {
@@ -77,10 +77,10 @@
 
 @media screen and (min-width:1280px) {
     .table__users {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .input__fone, .input__tag, .info__actions {
-        width: 100px;
+        width: 90px;
     }
 }

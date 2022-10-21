@@ -29,7 +29,7 @@ export function Home() {
     return (
         <main className="main__content">
             <section className="form__body">
-                <ToastContainer autoClose={3000} position={toast.POSITION.TOP_CENTER} className=""/>
+                <ToastContainer autoClose={3000} position={toast.POSITION.TOP_CENTER} className="popup"/>
                 <UserInput onEdit={onEdit} setOnEdit={setOnEdit} getUsers={getUsers} />
             </section>
             <section className="users__database">

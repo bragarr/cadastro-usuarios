@@ -108,7 +108,7 @@ export function UserInput({ getUsers, onEdit, setOnEdit }) {
                         className="input__data"
                     />
                 </label>
-                <button type="submit" className="button__save"><AiOutlineSave /></button>
+                <button type="submit" className="button__save"><AiOutlineSave />Save</button>
             </fieldset>
         </form>
     )
