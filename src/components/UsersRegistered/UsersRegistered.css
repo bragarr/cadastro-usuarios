@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    font-size: 0.5rem;
+    font-size: 0.60rem;
     border-radius: 5px;
     box-shadow: 5px 5px 20px 2px var(--standard-blue);
 }
@@ -48,13 +48,30 @@
     font-size: 2rem;
 }
 
-.input__email, .input__tag {
+.input__email, .input__tag--desc {
     text-transform: lowercase;
 }
 
+.input__tag, .input__tag--desc {
+    display: none;
+}
+
+.input__fone {
+    width: 50px;
+}
+
 @media screen and (min-width:720px) {
+
+    .input__tag, .input__tag--desc {
+        display: table-cell;
+        width: 50px;
+    }
+
     .table__users {
         font-size: 0.8rem;
+    }
+    .input__fone, .info__actions {
+        width: 90px;
     }
 }
 
@@ -64,6 +81,6 @@
     }
 
     .input__fone, .input__tag, .info__actions {
-        width: 90px;
+        width: 100px;
     }
 }

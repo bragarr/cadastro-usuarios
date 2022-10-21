@@ -45,7 +45,7 @@ export function UsersRegistered({users, setUsers, setOnEdit}) {
                         <td className="info__inputs info__body">{item.nome}</td>
                         <td className="info__inputs info__body input__email">{item.email}</td>
                         <td className="info__inputs info__body input__fone">{item.fone}</td>
-                        <td className="info__inputs info__body input__tag">{item.tag}</td>
+                        <td className="info__inputs info__body input__tag--desc">{item.tag}</td>
                         <td>
                             <FaEdit
                                 className="info__actions edit"

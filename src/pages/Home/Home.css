@@ -13,3 +13,7 @@
 .users__database {
     display: inline-block;
 }
+
+.popup {
+    text-transform: lowercase;
+}

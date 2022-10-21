@@ -22,7 +22,7 @@
     flex-direction: column;
     justify-items: center;
     margin: 1vh 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .input__data, .button__save {
-    height: 4vh;
+    height: 40px;
     font-size: 1.2rem;
     border-radius: 5px;
     border: none;
@@ -47,7 +47,8 @@
     color: var(--standard-white);
     border: none;
     cursor: pointer;
-    padding: 0 1vw;
+    padding: 0 2vw;
+    transition: 1s;
 }
 
 .button__save:hover {
@@ -76,6 +77,6 @@
     }
 
     .button__save {
-        height: 4.5vh;
+        height: 45px;
     }
 }
