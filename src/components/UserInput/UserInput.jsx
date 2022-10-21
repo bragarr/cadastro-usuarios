@@ -31,7 +31,7 @@ export function UserInput({ getUsers, onEdit, setOnEdit }) {
         
         if(onEdit) {
             await axios
-                .put("https://us-cdbr-east-06.cleardb.net:4000/" + onEdit.id, {
+                .put("https://mysql-cadastrousuarios.herokuapp.com/" + onEdit.id, {
                     nome: user.nome.value,
                     email: user.email.value,
                     fone: user.fone.value,
@@ -42,7 +42,7 @@ export function UserInput({ getUsers, onEdit, setOnEdit }) {
                 .catch(({ data }) => toast.error(data));
         } else {
             await axios
-                .post("https://us-cdbr-east-06.cleardb.net:4000/", {
+                .post("https://mysql-cadastrousuarios.herokuapp.com/", {
                     nome: user.nome.value,
                     email: user.email.value,
                     fone: user.fone.value,

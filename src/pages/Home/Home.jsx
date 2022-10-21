@@ -15,7 +15,7 @@ export function Home() {
 
     const getUsers = async () => {
         try {
-            const res = await axios.get("https://us-cdbr-east-06.cleardb.net:4000");
+            const res = await axios.get("https://mysql-cadastrousuarios.herokuapp.com/");
             setUsers(res.data.sort((a,b) => (a.name > b.name ? 1 : -1)));
         } catch (error) {
             toast.error(error);
@@ -24,6 +24,7 @@ export function Home() {
 
     useEffect(() => {
         getUsers();
+        console.log(users);
     }, [setUsers])
 
     return (
