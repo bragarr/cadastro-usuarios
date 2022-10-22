@@ -2,6 +2,10 @@
 
 Esta é uma aplicação CRUD para cadastro de usuários.
 
+Para conferir e testar, basta acessar o link abaixo:
+
+https://cadastro-usuarios-three.vercel.app/
+
 Objetivos
 
 - Realizar a criação de um sistema CRUD.
@@ -38,11 +42,3 @@ Para verificar a aplicação em backend, segue repositório abaixo:
 
 https://github.com/bragarr/cadastro-usuarios-backend
 
-Observações
-
-O projeto em sua 1ª versão foi concebido e pensado para ser utilizado com um servidor local.
-Até o presente momento consta-se disponível neste repositório todo script utilizado para realizar tal funcionalidade e evidências de testes acima.
-
-O deploy através de URL disponível neste respositório serve para consulta do projeto em frontend.
-
-Futuramente, ainda seguindo em parte para o desenvolvimento desta aplicação, será desenvolvido um deploy do repositório em backend para que a aplicação possa ser testada a partir da URL principal deste projeto.
