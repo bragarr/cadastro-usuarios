@@ -15,7 +15,7 @@ export function Home() {
 
     const getUsers = async () => {
         try {
-            const res = await axios.get("https://mysql-cadastrousuarios.herokuapp.com/");
+            const res = await axios.get("https://cadastro-usuarios-be.onrender.com/");
             setUsers(res.data.sort((a,b) => (a.name > b.name ? 1 : -1)));
         } catch (error) {
             toast.error(error);

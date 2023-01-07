@@ -14,7 +14,7 @@ export function UsersRegistered({users, setUsers, setOnEdit}) {
 
     const handleDelete = async (id) => {
         await axios
-            .delete("https://mysql-cadastrousuarios.herokuapp.com/" + id)
+            .delete("https://cadastro-usuarios-be.onrender.com/" + id)
             .then(({ data }) => {
                 const newArray = users.filter((user) => user.id !== id);
                 setUsers(newArray);
