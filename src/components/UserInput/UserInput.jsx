@@ -31,7 +31,7 @@ export function UserInput({ getUsers, onEdit, setOnEdit }) {
         
         if(onEdit) {
             await axios
-                .put("https://mysql-cadastrousuarios.herokuapp.com/" + onEdit.id, {
+                .put("https://cadastro-usuarios-be.onrender.com/" + onEdit.id, {
                     nome: user.nome.value,
                     email: user.email.value,
                     fone: user.fone.value,
@@ -42,7 +42,7 @@ export function UserInput({ getUsers, onEdit, setOnEdit }) {
                 .catch(({ data }) => toast.error(data));
         } else {
             await axios
-                .post("https://mysql-cadastrousuarios.herokuapp.com/", {
+                .post("https://cadastro-usuarios-be.onrender.com/", {
                     nome: user.nome.value,
                     email: user.email.value,
                     fone: user.fone.value,
